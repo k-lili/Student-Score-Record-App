@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DisplayActivity">
+
+    <TextView
+        android:id="@+id/tvInstruction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="24dp"
+        android:text="**Instruction: Click on the cell to modify the entry."
+        android:textAlignment="textStart" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginRight="24dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvDataName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAlignment="textStart"
+            android:paddingLeft="10dp"
+            android:text="Name" />
+
+        <TextView
+            android:id="@+id/tvDataID"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAlignment="textStart"
+            android:paddingLeft="10dp"
+            android:text="ID" />
+
+        <TextView
+            android:id="@+id/tvDataScore"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAlignment="textStart"
+            android:paddingLeft="10dp"
+            android:text="Score" />
+
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/gridView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        android:background="#FFFFFF"
+        android:fastScrollAlwaysVisible="true"
+        android:fastScrollEnabled="true"
+        android:numColumns="3" />
+
+
+
+</LinearLayout>
